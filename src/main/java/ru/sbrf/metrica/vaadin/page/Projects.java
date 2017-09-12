@@ -30,14 +30,14 @@ public class Projects extends UI {
 
         Grid<Project> grid = new Grid<>();
         grid.setItems(projects);
-        grid.addColumn(Project::getCode).setCaption("Код проекта").setEditorComponent(new TextField(), Project::setCode).setEditable(true);
-        grid.addColumn(Project::getName).setCaption("Название проекта ").setEditorComponent(new TextField(), Project::setName).setEditable(true);
-        grid.addColumn(Project::getAltName).setCaption("Альтернативное название").setEditorComponent(new TextField(), Project::setAltName).setEditable(true);
+        grid.addColumn(Project::getCode).setCaption("Код проекта").setEditorComponent(new TextField(), Project::setCode).setEditable(false);
+        grid.addColumn(Project::getName).setCaption("Название проекта ").setEditorComponent(new TextField(), Project::setName).setEditable(false);
+        grid.addColumn(Project::getAltName).setCaption("Альтернативное название").setEditorComponent(new TextField(), Project::setAltName).setEditable(false);
         grid.setWidth(100, Unit.PERCENTAGE);
         grid.setHeight(100, Unit.PERCENTAGE);
 
         Editor<Project> editor = grid.getEditor();
-        editor.setEnabled(true);
+        editor.setEnabled(false);
         editor.addSaveListener((editorSaveEvent) -> projectRestClient.saveProject(editorSaveEvent.getBean()));
         editor.setSaveCaption("Сохранить");
         editor.setCancelCaption("Отмена");
