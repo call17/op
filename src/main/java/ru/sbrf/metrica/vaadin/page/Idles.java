@@ -32,8 +32,6 @@ public class Idles extends UI{
         content.setWidth(100, Unit.PERCENTAGE);
         content.setHeight(100, Unit.PERCENTAGE);
 
-
-
         List<Idle> idles = idleRestClient.getIdles();
         List<Project> projects = projectRestClient.getProjects();
         List<String> projectsCodes = new ArrayList<>(projects.size());
