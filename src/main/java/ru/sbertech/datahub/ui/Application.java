@@ -1,4 +1,4 @@
-package ru.sbrf.metrica.vaadin;
+package ru.sbertech.datahub.ui;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

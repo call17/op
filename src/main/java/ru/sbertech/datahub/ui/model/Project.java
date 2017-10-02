@@ -1,4 +1,4 @@
-package ru.sbrf.metrica.vaadin.model;
+package ru.sbertech.datahub.ui.model;
 
 public class Project {
     private Long id;

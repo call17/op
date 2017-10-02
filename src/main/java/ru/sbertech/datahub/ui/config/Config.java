@@ -1,4 +1,4 @@
-package ru.sbrf.metrica.vaadin.config;
+package ru.sbertech.datahub.ui.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

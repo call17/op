@@ -1,4 +1,4 @@
-package ru.sbrf.metrica.vaadin;
+package ru.sbertech.datahub.ui;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

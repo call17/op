@@ -1,12 +1,13 @@
-package ru.sbrf.metrica.vaadin.rest;
+package ru.sbertech.datahub.ui.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import ru.sbrf.metrica.vaadin.config.Constant;
-import ru.sbrf.metrica.vaadin.model.Idle;
+import ru.sbertech.datahub.ui.config.Constant;
+
+import ru.sbertech.datahub.webservice.model.metric.idle.IdleTestStandProblem;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,18 +19,18 @@ public class IdleRestClient {
     Constant constant;
     @Autowired
     RestTemplate restTemplate;
-    private String IDLE_PATH = "/api/idles";
+    private String IDLE_PATH = "api/metric/idles/getList";
 
-    public List<Idle> getIdles() {
-        List<Idle> Idles = new ArrayList<>();
+    public List<IdleTestStandProblem> getIdles() {
+        List<IdleTestStandProblem> Idles = new ArrayList<>();
 
-        ResponseEntity<Idle[]> response = restTemplate.getForEntity(constant.BACKEND_URL + IDLE_PATH, Idle[].class);
+        ResponseEntity<IdleTestStandProblem[]> response = restTemplate.getForEntity(constant.WEB_SERVICE_URL + IDLE_PATH, IdleTestStandProblem[].class, "releaseCode=");
         Idles.addAll(Arrays.asList(response.getBody()));
 
         return Idles;
     }
 
-    public void saveIdle(Idle Idle) {
+    public void saveIdle(IdleTestStandProblem Idle) {
         restTemplate.postForEntity(constant.BACKEND_URL + IDLE_PATH, new HttpEntity<>(Idle), Object.class);
     }
 }

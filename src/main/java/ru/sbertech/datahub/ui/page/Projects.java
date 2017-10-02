@@ -1,4 +1,4 @@
-package ru.sbrf.metrica.vaadin.page;
+package ru.sbertech.datahub.ui.page;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.server.VaadinRequest;
@@ -9,8 +9,8 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.components.grid.Editor;
 import org.springframework.beans.factory.annotation.Autowired;
-import ru.sbrf.metrica.vaadin.model.Project;
-import ru.sbrf.metrica.vaadin.rest.ProjectRestClient;
+import ru.sbertech.datahub.ui.model.Project;
+import ru.sbertech.datahub.ui.rest.ProjectRestClient;
 
 import java.util.List;
 

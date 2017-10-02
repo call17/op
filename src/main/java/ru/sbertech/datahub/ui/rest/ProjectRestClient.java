@@ -1,12 +1,12 @@
-package ru.sbrf.metrica.vaadin.rest;
+package ru.sbertech.datahub.ui.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import ru.sbrf.metrica.vaadin.config.Constant;
-import ru.sbrf.metrica.vaadin.model.Project;
+import ru.sbertech.datahub.ui.config.Constant;
+import ru.sbertech.datahub.ui.model.Project;
 
 import java.util.ArrayList;
 import java.util.Arrays;

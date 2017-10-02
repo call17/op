@@ -1,4 +1,4 @@
-package ru.sbrf.metrica.vaadin.model;
+package ru.sbertech.datahub.ui.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
