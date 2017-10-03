@@ -3,19 +3,20 @@ package ru.sbertech.datahub.ui;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.test.context.web.WebAppConfiguration;
 
-@SpringBootApplication
-public class Application extends SpringBootServletInitializer {
+//@SpringBootApplication
+//@WebAppConfiguration
+public class Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+//	public static void main(String[] args) {
+//		SpringApplication.run(ApplicationServlet.class, args);
+//	}
+//
+//	private static Class<Application> applicationClass = Application.class;
 
-	private static Class<Application> applicationClass = Application.class;
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder springApplicationBuilder) {
-        return springApplicationBuilder.sources(applicationClass);
-    }
+//    @Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder springApplicationBuilder) {
+//        return springApplicationBuilder.sources(applicationClass);
+//    }
 }
