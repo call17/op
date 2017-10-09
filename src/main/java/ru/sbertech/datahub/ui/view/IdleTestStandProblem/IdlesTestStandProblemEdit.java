@@ -62,9 +62,9 @@ public class IdlesTestStandProblemEdit extends Window {
         asList.add(new AutomatedSystem(null, "efs", "ЕФС", "a", null, null, null, null));
         asList.add(new AutomatedSystem(null, "pprb", "ППРБ", "a", null, null, null, null));
 
-        projectList.add(new Project(null, null, null, null, "123456", "Проект 1", "Проект 1", null, null, null, null, StatusEnum.ACTIVE, null, null, null, null));
-        projectList.add(new Project(null, null, null, null, "456789", "Проект 2", "Проект 2", null, null, null, null, StatusEnum.ACTIVE, null, null, null, null));
-        projectList.add(new Project(null, null, null, null, "789123", "Проект 3", "Проект 3", null, null, null, null, StatusEnum.ACTIVE, null, null, null, null));
+        projectList.add(new Project(null, null, null, null, "123456", "Проект 1", "Проект 1", null, null, null, null, StatusEnum.ACTIVE.getName(), null, null, null, null));
+        projectList.add(new Project(null, null, null, null, "456789", "Проект 2", "Проект 2", null, null, null, null, StatusEnum.ACTIVE.getName(), null, null, null, null));
+        projectList.add(new Project(null, null, null, null, "789123", "Проект 3", "Проект 3", null, null, null, null, StatusEnum.ACTIVE.getName(), null, null, null, null));
     }
 
     private ComboBox prepareComboBox(ComboBox comboBox, String emptySelectionCaptioin, String placeholder) {

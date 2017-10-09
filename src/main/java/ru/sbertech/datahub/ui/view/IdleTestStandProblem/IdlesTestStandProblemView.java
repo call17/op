@@ -27,7 +27,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-@Theme("valo")
+@Theme("portal")
 @SpringUI(path = "/idles")
 public final class IdlesTestStandProblemView extends VerticalLayout implements View, IdlesTestStandProblemEdit.IdlesTestStandProblemEditListener {
     public static final String VIEW_NAME = "IdlesTestStandProblemView";
